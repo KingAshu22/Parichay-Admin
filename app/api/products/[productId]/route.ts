@@ -42,11 +42,11 @@ export const POST = async (
   { params }: { params: { productId: string } }
 ) => {
   try {
-    const { userId } = auth();
+    // const { userId } = auth();
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
+    // if (!userId) {
+    //   return new NextResponse("Unauthorized", { status: 401 });
+    // }
 
     await connectToDB();
 
@@ -142,11 +142,11 @@ export const DELETE = async (
   { params }: { params: { productId: string } }
 ) => {
   try {
-    const { userId } = auth();
+    // const { userId } = auth();
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", { status: 401 });
-    }
+    // if (!userId) {
+    //   return new NextResponse("Unauthorized", { status: 401 });
+    // }
 
     await connectToDB();
 
